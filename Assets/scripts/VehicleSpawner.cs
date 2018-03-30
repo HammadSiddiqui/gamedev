@@ -7,7 +7,7 @@ public class VehicleSpawner : MonoBehaviour {
 	public GameObject car;
 	public GameObject carFromTheSameDirection;
 
-	public float delayTimer = Random.Range(0.0f, 1.9f);
+	public float delayTimer = Random.Range(0.0f, 5.9f);
 	float timer;
 	// Use this for initialization
 	void Start () {
@@ -19,10 +19,10 @@ public class VehicleSpawner : MonoBehaviour {
 	void Update () {
 		timer -= Time.deltaTime;
 		if (timer <= 0) {
-			Vector3 carPosition = new Vector3 (Random.Range(-0.0f, 1.9f), transform.position.y, transform.position.z);
+			Vector3 carPosition = new Vector3 (Random.Range(0.1f, 1.9f), transform.position.y, transform.position.z);
 			Instantiate (car, carPosition, transform.rotation);
 
-			Vector3 carFromSameDirectionPosition = new Vector3 (Random.Range(-1.9f, 0.0f), transform.position.y, transform.position.z);
+			Vector3 carFromSameDirectionPosition = new Vector3 (Random.Range(-1.9f, -0.3f), transform.position.y, transform.position.z);
 			Instantiate (carFromTheSameDirection, carFromSameDirectionPosition, transform.rotation);
 		
 			timer = delayTimer;

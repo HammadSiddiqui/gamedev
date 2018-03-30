@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BikeControl : MonoBehaviour {
-
+	
+	public GameObject explosion; // drag your explosion prefab here
 	public float bikeSpeed;
 	Vector3 position;
 	//Jump
@@ -21,7 +22,7 @@ public class BikeControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		position.x += Input.GetAxis("Horizontal") * bikeSpeed * Time.deltaTime;
-		position.x = Mathf.Clamp (position.x, -1.9f, 1.9f);
+		position.x = Mathf.Clamp (position.x, -2.5f, 2.5f);
 
 		//position.y += Input.GetAxis("Vertical") * bikeSpeed * Time.deltaTime;
 		//position.y = Mathf.Clamp (position.y, -1.9f, 1.9f);
@@ -59,9 +60,21 @@ public class BikeControl : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col) {
 		if(col.gameObject.tag == "Vehicle" || col.gameObject.tag == "policeman"){
+			if(col.gameObject.tag != "policeman") {
+				GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity) as GameObject;
+				Destroy(expl, 1); // delete the explosion after 3 seconds
+			
+			}
+			Invoke ("PauseGame", 1);
 			Destroy (gameObject);
+			//Invoke ("PauseGame", 1);
+
 		}
 	
+	}
+
+	void PauseGame () {
+		Time.timeScale = 0.0f;
 	}
 	 
 

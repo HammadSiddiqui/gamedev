@@ -1,18 +1,19 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/PotHoleSpawn.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/PindiBoy.cs">
     <Files>
-      <File FileName="Assets/scripts/MoveCarFrom.cs" Line="9" Column="16" />
-      <File FileName="Assets/scripts/MoveCarOpp.cs" Line="7" Column="20" />
+      <File FileName="Assets/scripts/BikeControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/MoveCarFrom.cs" Line="17" Column="2" />
+      <File FileName="Assets/scripts/MoveCarOpp.cs" Line="15" Column="70" />
       <File FileName="Assets/scripts/TrackMoveScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/Destroyer.cs" Line="20" Column="4" />
-      <File FileName="Assets/scripts/policemanMove.cs" Line="7" Column="20" />
-      <File FileName="Assets/scripts/BikeControl.cs" Line="27" Column="5" />
-      <File FileName="Assets/scripts/PindiBoy.cs" Line="28" Column="4" />
-      <File FileName="Assets/scripts/PindiSpawner.cs" Line="27" Column="1" />
-      <File FileName="Assets/scripts/VehicleSpawner.cs" Line="23" Column="26" />
+      <File FileName="Assets/scripts/Destroyer.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/policemanMove.cs" Line="8" Column="24" />
+      <File FileName="Assets/scripts/PindiBoy.cs" Line="19" Column="65" />
+      <File FileName="Assets/scripts/PindiSpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/VehicleSpawner.cs" Line="25" Column="80" />
       <File FileName="Assets/scripts/PotHoleSpawn.cs" Line="31" Column="1" />
-      <File FileName="Assets/scripts/MovePotHole.cs" Line="8" Column="21" />
+      <File FileName="Assets/scripts/MovePotHole.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/policemanSpawn.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

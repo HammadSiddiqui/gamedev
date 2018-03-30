@@ -6,7 +6,7 @@ public class policemanSpawn : MonoBehaviour {
 
 	public GameObject policeman;
 
-	public float delayTimer = Random.Range(0.0f, 1.9f);
+	public float delayTimer;
 	float timer;
 	// Use this for initialization
 	void Start () {

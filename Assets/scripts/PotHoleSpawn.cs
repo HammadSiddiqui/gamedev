@@ -6,7 +6,7 @@ public class PotHoleSpawn : MonoBehaviour {
 
 	public GameObject potHole;
 
-	public float delayTimer = Random.Range(0.0f, 1.9f);
+	public float delayTimer;
 	float timer;
 	// Use this for initialization
 	void Start () {
@@ -18,7 +18,7 @@ public class PotHoleSpawn : MonoBehaviour {
 	void Update () {
 		timer -= Time.deltaTime;
 		if (timer <= 0) {
-			Vector3 potPosition = new Vector3 (Random.Range(-0.0f, 1.9f), transform.position.y, transform.position.z);
+			Vector3 potPosition = new Vector3 (Random.Range(-1.7f, 1.7f), transform.position.y, transform.position.z);
 			Instantiate (potHole, potPosition, transform.rotation);
 
 			timer = delayTimer;
